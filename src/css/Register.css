@@ -1,0 +1,115 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10% auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 30px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1),
+        10px 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+
+.form-container h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: #022B15;
+    background: linear-gradient(to right, #022B15 0%, #1c9622 50%, #022B15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.form-container .input-field-register {
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid darkgreen;
+    padding: 5px;
+    outline: none;
+}
+
+
+
+.input-field-register::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-container .register-button {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+    color: white;
+    background: rgb(2, 43, 21);
+    background: linear-gradient(90deg, rgba(2, 43, 21, 1) 7%, rgba(28, 150, 34, 1) 50%, rgba(2, 43, 21, 1) 93%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.form-container .register-button:hover {
+    color: white;
+    background: rgb(28, 150, 34);
+    background: linear-gradient(90deg, rgba(28, 150, 34, 1) 16%, rgba(2, 43, 21, 1) 50%, rgba(28, 150, 34, 1) 84%);
+}
+
+.checkbox-label-register .terms-link {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkbox-label-register {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-container .input-error {
+    border: none;
+    border-bottom: 2px solid red;
+
+}
+
+.error-message {
+    color: red;
+    display: flex;
+    align-items: center;
+    left: 0;
+    padding-bottom: 0 !important;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .form-container {
+        width: 100%;
+        top: 50%;
+        height: auto;
+        display: block;
+        justify-content: initial;
+    }
+
+    .form-container h2 {
+        font-size: 30px;
+    }
+
+    .form-container .input-field-register {
+        width: 100%;
+    }
+
+    .form-container .register-button {
+        width: 100%;
+    }
+
+    .checkbox-label-register .terms-link {
+        display: block;
+        margin-top: 10px;
+    }
+}

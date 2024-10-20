@@ -1,0 +1,494 @@
+body {
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gallery-container {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    border: none;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.7);
+    background-color: #fff !important;
+    border-radius: 10px;
+    padding: 0;
+
+
+}
+
+
+.about-gallery h2,
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-gallery p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.about-gallery h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: #022B15;
+    background: linear-gradient(to right, #022B15 0%, #1c9622 50%, #022B15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-gallery {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card-author {
+    padding-top: 20px;
+}
+
+.card-author p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-author a {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.card-container {
+    margin: 0;
+    padding: 0;
+}
+
+.card-container div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+
+}
+
+
+.image-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.slick-slider button {
+    background-color: transparent !important;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    top: 40% !important;
+    z-index: 1;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '\2039' !important;
+    font-size: 80px !important;
+    font-weight: 600 !important;
+    color: #555555 !important;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: none;
+    opacity: 0.6 !important;
+}
+
+.slick-next:before {
+    content: '\203A' !important;
+    font-size: 80px !important;
+    font-weight: 600 !important;
+    color: #555555 !important;
+    right: 0;
+}
+
+.slick-next:hover::before {
+    font-size: 80px !important;
+    font-weight: 600 !important;
+    color: grey !important;
+    right: 0;
+}
+
+.slick-prev:hover::before {
+    font-size: 80px !important;
+    font-weight: 600 !important;
+    color: grey !important;
+    right: 0;
+}
+
+.slick-prev:before {
+    left: 0;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #ddd;
+    opacity: 0.1 !important;
+}
+
+
+
+.comments-container {
+    margin-top: 40px !important;
+}
+
+.edit-delete-body .button-container {
+    margin-top: 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.edit-button,
+.delete-button {
+    display: inline-block;
+    margin: 0;
+}
+
+.edit-button {
+    width: 50%;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background: rgb(2, 43, 21);
+    background: linear-gradient(90deg, rgba(2, 43, 21, 1) 7%, rgba(28, 150, 34, 1) 50%, rgba(2, 43, 21, 1) 93%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    color: white;
+    border: none !important;
+    margin-right: 5px;
+}
+
+.delete-button {
+    width: 50%;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background-color: #cc0000 !important;
+    font-weight: 600;
+    margin-left: 5px;
+    color: white;
+    border: none !important;
+}
+
+.edit-button:hover {
+    color: white;
+    background: rgb(28, 150, 34);
+    background: linear-gradient(90deg, rgba(28, 150, 34, 1) 16%, rgba(2, 43, 21, 1) 50%, rgba(28, 150, 34, 1) 84%);
+}
+
+
+
+.delete-button:hover {
+    border-radius: 10px;
+    font-family: sans-serif;
+    background-color: #e60000 !important;
+    font-weight: 600;
+}
+
+.comment-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 5px;
+    max-height: 50px;
+    padding-right: 0 !important;
+}
+
+.textarea-comment {
+    background-color: transparent !important;
+}
+
+.comment-button {
+    border: none;
+    background-color: transparent;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: green;
+    font-size: 20px;
+    place-content: "Add comment";
+}
+
+.comment-button:hover {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.comment-button[title] {
+    position: relative;
+}
+
+.comment-button[title]::before {
+    content: "Comment";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.comment-button[title]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.trash-button {
+    border: none;
+    border-radius: 10px;
+    color: red;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+.trash-button:hover {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.trash-button[title] {
+    position: relative;
+}
+
+.trash-button[title]::before {
+    content: "Delete";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.trash-button[title]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.rotated-icon {
+    transform: rotate(45deg);
+}
+
+
+
+.comments-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    max-height: none !important;
+    height: auto;
+    transition: height 0.3s ease;
+    padding: 10px;
+}
+
+.comments-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.comments-body .comments-container {
+    margin-top: 5px;
+}
+
+.comment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    min-height: 50px;
+    padding-right: 0;
+    padding: 0 !important;
+    padding-left: 10px !important;
+
+
+}
+
+
+
+.comment-body-title {
+    font-size: 15px !important;
+    font-family: sans-serif;
+    text-align: left !important;
+    padding-top: 15px !important;
+    padding-left: 5px !important;
+    overflow: hidden;
+    overflow-wrap: break-word;
+
+}
+
+.trash-button {
+    margin-left: 10px;
+}
+
+.load-more-comments {
+    width: 100%;
+}
+
+.load-more-comments button {
+    min-width: 130px;
+    font-size: 17px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #495057;
+}
+
+.load-more-comments button:hover {
+    background-color: #6c757d;
+}
+
+.load-more-comments button:active {
+    top: 2px;
+}
+
+.load-more-comments button:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+}
+
+.load-more-comments button:disabled:hover {
+    background-color: #ced4da;
+
+}
+
+.author-name {
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .gallery-container {
+        max-width: 700px;
+        height: auto;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about-gallery h2 {
+        font-size: 30px;
+    }
+
+    .about-gallery p {
+        font-size: 16px;
+    }
+
+    .edit-delete-body .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edit-button,
+    .delete-button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 15px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-container {
+        max-width: 400px;
+        margin: 50px 5px 50px 5px;
+    }
+
+    .about-gallery h2 {
+        font-size: 25px;
+    }
+
+    .about-gallery p {
+        font-size: 14px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 12px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 25px;
+    }
+
+    .button-container {
+        padding: 10px;
+    }
+
+    .edit-button,
+    .delete-button {
+        margin: 10px 0;
+    }
+}
